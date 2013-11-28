@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3062EA0E1847A9D3005B254E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA0D1847A9D3005B254E /* Foundation.framework */; };
+		3062EA101847A9D3005B254E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA0F1847A9D3005B254E /* CoreGraphics.framework */; };
+		3062EA121847A9D3005B254E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA111847A9D3005B254E /* UIKit.framework */; };
+		3062EA181847A9D3005B254E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3062EA161847A9D3005B254E /* InfoPlist.strings */; };
+		3062EA1A1847A9D3005B254E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EA191847A9D3005B254E /* main.m */; };
+		3062EA1E1847A9D3005B254E /* ABAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EA1D1847A9D3005B254E /* ABAAppDelegate.m */; };
+		3062EA201847A9D3005B254E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3062EA1F1847A9D3005B254E /* Images.xcassets */; };
+		3062EA271847A9D3005B254E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA261847A9D3005B254E /* XCTest.framework */; };
+		3062EA281847A9D3005B254E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA0D1847A9D3005B254E /* Foundation.framework */; };
+		3062EA291847A9D3005B254E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA111847A9D3005B254E /* UIKit.framework */; };
+		3062EA311847A9D3005B254E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3062EA2F1847A9D3005B254E /* InfoPlist.strings */; };
+		3062EA331847A9D3005B254E /* abaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EA321847A9D3005B254E /* abaAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3062EA2A1847A9D3005B254E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3062EA021847A9D3005B254E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3062EA091847A9D3005B254E;
+			remoteInfo = abaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3062EA0A1847A9D3005B254E /* abaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = abaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3062EA0D1847A9D3005B254E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3062EA0F1847A9D3005B254E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3062EA111847A9D3005B254E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3062EA151847A9D3005B254E /* abaApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "abaApp-Info.plist"; sourceTree = "<group>"; };
+		3062EA171847A9D3005B254E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3062EA191847A9D3005B254E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3062EA1B1847A9D3005B254E /* abaApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "abaApp-Prefix.pch"; sourceTree = "<group>"; };
+		3062EA1C1847A9D3005B254E /* ABAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABAAppDelegate.h; sourceTree = "<group>"; };
+		3062EA1D1847A9D3005B254E /* ABAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABAAppDelegate.m; sourceTree = "<group>"; };
+		3062EA1F1847A9D3005B254E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3062EA251847A9D3005B254E /* abaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = abaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3062EA261847A9D3005B254E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3062EA2E1847A9D3005B254E /* abaAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "abaAppTests-Info.plist"; sourceTree = "<group>"; };
+		3062EA301847A9D3005B254E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3062EA321847A9D3005B254E /* abaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abaAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3062EA071847A9D3005B254E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA101847A9D3005B254E /* CoreGraphics.framework in Frameworks */,
+				3062EA121847A9D3005B254E /* UIKit.framework in Frameworks */,
+				3062EA0E1847A9D3005B254E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3062EA221847A9D3005B254E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA271847A9D3005B254E /* XCTest.framework in Frameworks */,
+				3062EA291847A9D3005B254E /* UIKit.framework in Frameworks */,
+				3062EA281847A9D3005B254E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3062EA011847A9D3005B254E = {
+			isa = PBXGroup;
+			children = (
+				3062EA131847A9D3005B254E /* abaApp */,
+				3062EA2C1847A9D3005B254E /* abaAppTests */,
+				3062EA0C1847A9D3005B254E /* Frameworks */,
+				3062EA0B1847A9D3005B254E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3062EA0B1847A9D3005B254E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA0A1847A9D3005B254E /* abaApp.app */,
+				3062EA251847A9D3005B254E /* abaAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3062EA0C1847A9D3005B254E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA0D1847A9D3005B254E /* Foundation.framework */,
+				3062EA0F1847A9D3005B254E /* CoreGraphics.framework */,
+				3062EA111847A9D3005B254E /* UIKit.framework */,
+				3062EA261847A9D3005B254E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3062EA131847A9D3005B254E /* abaApp */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA1C1847A9D3005B254E /* ABAAppDelegate.h */,
+				3062EA1D1847A9D3005B254E /* ABAAppDelegate.m */,
+				3062EA1F1847A9D3005B254E /* Images.xcassets */,
+				3062EA141847A9D3005B254E /* Supporting Files */,
+			);
+			path = abaApp;
+			sourceTree = "<group>";
+		};
+		3062EA141847A9D3005B254E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA151847A9D3005B254E /* abaApp-Info.plist */,
+				3062EA161847A9D3005B254E /* InfoPlist.strings */,
+				3062EA191847A9D3005B254E /* main.m */,
+				3062EA1B1847A9D3005B254E /* abaApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3062EA2C1847A9D3005B254E /* abaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA321847A9D3005B254E /* abaAppTests.m */,
+				3062EA2D1847A9D3005B254E /* Supporting Files */,
+			);
+			path = abaAppTests;
+			sourceTree = "<group>";
+		};
+		3062EA2D1847A9D3005B254E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3062EA2E1847A9D3005B254E /* abaAppTests-Info.plist */,
+				3062EA2F1847A9D3005B254E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3062EA091847A9D3005B254E /* abaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3062EA361847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaApp" */;
+			buildPhases = (
+				3062EA061847A9D3005B254E /* Sources */,
+				3062EA071847A9D3005B254E /* Frameworks */,
+				3062EA081847A9D3005B254E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = abaApp;
+			productName = abaApp;
+			productReference = 3062EA0A1847A9D3005B254E /* abaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3062EA241847A9D3005B254E /* abaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3062EA391847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaAppTests" */;
+			buildPhases = (
+				3062EA211847A9D3005B254E /* Sources */,
+				3062EA221847A9D3005B254E /* Frameworks */,
+				3062EA231847A9D3005B254E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3062EA2B1847A9D3005B254E /* PBXTargetDependency */,
+			);
+			name = abaAppTests;
+			productName = abaAppTests;
+			productReference = 3062EA251847A9D3005B254E /* abaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3062EA021847A9D3005B254E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ABA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Christoffer Tønnessen";
+				TargetAttributes = {
+					3062EA241847A9D3005B254E = {
+						TestTargetID = 3062EA091847A9D3005B254E;
+					};
+				};
+			};
+			buildConfigurationList = 3062EA051847A9D3005B254E /* Build configuration list for PBXProject "abaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3062EA011847A9D3005B254E;
+			productRefGroup = 3062EA0B1847A9D3005B254E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3062EA091847A9D3005B254E /* abaApp */,
+				3062EA241847A9D3005B254E /* abaAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3062EA081847A9D3005B254E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA181847A9D3005B254E /* InfoPlist.strings in Resources */,
+				3062EA201847A9D3005B254E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3062EA231847A9D3005B254E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA311847A9D3005B254E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3062EA061847A9D3005B254E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA1A1847A9D3005B254E /* main.m in Sources */,
+				3062EA1E1847A9D3005B254E /* ABAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3062EA211847A9D3005B254E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3062EA331847A9D3005B254E /* abaAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3062EA2B1847A9D3005B254E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3062EA091847A9D3005B254E /* abaApp */;
+			targetProxy = 3062EA2A1847A9D3005B254E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3062EA161847A9D3005B254E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3062EA171847A9D3005B254E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3062EA2F1847A9D3005B254E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3062EA301847A9D3005B254E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3062EA341847A9D3005B254E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3062EA351847A9D3005B254E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3062EA371847A9D3005B254E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abaApp/abaApp-Prefix.pch";
+				INFOPLIST_FILE = "abaApp/abaApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3062EA381847A9D3005B254E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abaApp/abaApp-Prefix.pch";
+				INFOPLIST_FILE = "abaApp/abaApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3062EA3A1847A9D3005B254E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/abaApp.app/abaApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abaApp/abaApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "abaAppTests/abaAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3062EA3B1847A9D3005B254E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/abaApp.app/abaApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "abaApp/abaApp-Prefix.pch";
+				INFOPLIST_FILE = "abaAppTests/abaAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3062EA051847A9D3005B254E /* Build configuration list for PBXProject "abaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3062EA341847A9D3005B254E /* Debug */,
+				3062EA351847A9D3005B254E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3062EA361847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3062EA371847A9D3005B254E /* Debug */,
+				3062EA381847A9D3005B254E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3062EA391847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3062EA3A1847A9D3005B254E /* Debug */,
+				3062EA3B1847A9D3005B254E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3062EA021847A9D3005B254E /* Project object */;
+}
