@@ -73,7 +73,8 @@
 {
     NSDictionary *coffeeStatus = JSON[@"coffee"];
     
-    if (coffeeStatus[@"status"]) {
+    NSInteger status = [coffeeStatus[@"status"] integerValue];
+    if (status > 0) {
         [self displayCoffeeStatus:@"Kaffen er på! LØP :D"];
     } else {
         [self displayCoffeeStatus:@"Kaffen er av! Skru den på!"];
