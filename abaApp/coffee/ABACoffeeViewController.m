@@ -86,7 +86,9 @@
 - (void) fetchCoffeeStatusInfoFromAbakusServerWithJSON
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:[NSString stringWithFormat:@"%@%@", ABAKUS_API_ENDPOINT, ABAKUS_COFFEE_STATUS_ENDPOINT] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:[NSString stringWithFormat:@"%@%@", ABAKUS_API_ENDPOINT, ABAKUS_COFFEE_STATUS_ENDPOINT]
+      parameters:nil
+         success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self displayCoffeeStatusWithDataFromJSON:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [self displayCoffeeStatus:@"Error, please refresh"];
