@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3040C62618490D110011277B /* ABACoffeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040C62418490D110011277B /* ABACoffeeViewController.m */; };
+		3040C62718490D110011277B /* ABACoffeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3040C62518490D110011277B /* ABACoffeeViewController.xib */; };
 		3062EA0E1847A9D3005B254E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA0D1847A9D3005B254E /* Foundation.framework */; };
 		3062EA101847A9D3005B254E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA0F1847A9D3005B254E /* CoreGraphics.framework */; };
 		3062EA121847A9D3005B254E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA111847A9D3005B254E /* UIKit.framework */; };
@@ -19,6 +21,7 @@
 		3062EA291847A9D3005B254E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062EA111847A9D3005B254E /* UIKit.framework */; };
 		3062EA311847A9D3005B254E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3062EA2F1847A9D3005B254E /* InfoPlist.strings */; };
 		3062EA331847A9D3005B254E /* abaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EA321847A9D3005B254E /* abaAppTests.m */; };
+		4B23CB309AF54BA3BC0C35CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8F2B017547423FB9CC91E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8F2B017547423FB9CC91E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3040C62318490D110011277B /* ABACoffeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABACoffeeViewController.h; path = coffee/ABACoffeeViewController.h; sourceTree = "<group>"; };
+		3040C62418490D110011277B /* ABACoffeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABACoffeeViewController.m; path = coffee/ABACoffeeViewController.m; sourceTree = "<group>"; };
+		3040C62518490D110011277B /* ABACoffeeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ABACoffeeViewController.xib; path = coffee/ABACoffeeViewController.xib; sourceTree = "<group>"; };
 		3062EA0A1847A9D3005B254E /* abaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = abaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3062EA0D1847A9D3005B254E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3062EA0F1847A9D3005B254E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +55,8 @@
 		3062EA2E1847A9D3005B254E /* abaAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "abaAppTests-Info.plist"; sourceTree = "<group>"; };
 		3062EA301847A9D3005B254E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3062EA321847A9D3005B254E /* abaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abaAppTests.m; sourceTree = "<group>"; };
+		306C99F11849152100A53E77 /* ABAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAConstants.h; path = resources/ABAConstants.h; sourceTree = "<group>"; };
+		4737F0BE2C93464199FF4C97 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 				3062EA101847A9D3005B254E /* CoreGraphics.framework in Frameworks */,
 				3062EA121847A9D3005B254E /* UIKit.framework in Frameworks */,
 				3062EA0E1847A9D3005B254E /* Foundation.framework in Frameworks */,
+				4B23CB309AF54BA3BC0C35CB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				3062EA2C1847A9D3005B254E /* abaAppTests */,
 				3062EA0C1847A9D3005B254E /* Frameworks */,
 				3062EA0B1847A9D3005B254E /* Products */,
+				4737F0BE2C93464199FF4C97 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +111,7 @@
 				3062EA0F1847A9D3005B254E /* CoreGraphics.framework */,
 				3062EA111847A9D3005B254E /* UIKit.framework */,
 				3062EA261847A9D3005B254E /* XCTest.framework */,
+				1F8F2B017547423FB9CC91E0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,8 +119,12 @@
 		3062EA131847A9D3005B254E /* abaApp */ = {
 			isa = PBXGroup;
 			children = (
+				306C99F11849152100A53E77 /* ABAConstants.h */,
 				3062EA1C1847A9D3005B254E /* ABAAppDelegate.h */,
 				3062EA1D1847A9D3005B254E /* ABAAppDelegate.m */,
+				3040C62318490D110011277B /* ABACoffeeViewController.h */,
+				3040C62418490D110011277B /* ABACoffeeViewController.m */,
+				3040C62518490D110011277B /* ABACoffeeViewController.xib */,
 				3062EA1F1847A9D3005B254E /* Images.xcassets */,
 				3062EA141847A9D3005B254E /* Supporting Files */,
 			);
@@ -151,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3062EA361847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaApp" */;
 			buildPhases = (
+				033C820E7E124594ABB2CF3D /* Check Pods Manifest.lock */,
 				3062EA061847A9D3005B254E /* Sources */,
 				3062EA071847A9D3005B254E /* Frameworks */,
 				3062EA081847A9D3005B254E /* Resources */,
+				2C8C30DF09CA49C9BDF85C19 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3040C62718490D110011277B /* ABACoffeeViewController.xib in Resources */,
 				3062EA181847A9D3005B254E /* InfoPlist.strings in Resources */,
 				3062EA201847A9D3005B254E /* Images.xcassets in Resources */,
 			);
@@ -235,12 +254,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		033C820E7E124594ABB2CF3D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C8C30DF09CA49C9BDF85C19 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3062EA061847A9D3005B254E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3062EA1A1847A9D3005B254E /* main.m in Sources */,
+				3040C62618490D110011277B /* ABACoffeeViewController.m in Sources */,
 				3062EA1E1847A9D3005B254E /* ABAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +410,7 @@
 		};
 		3062EA371847A9D3005B254E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4737F0BE2C93464199FF4C97 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -370,6 +424,7 @@
 		};
 		3062EA381847A9D3005B254E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4737F0BE2C93464199FF4C97 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -442,6 +497,7 @@
 				3062EA381847A9D3005B254E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3062EA391847A9D3005B254E /* Build configuration list for PBXNativeTarget "abaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +506,7 @@
 				3062EA3B1847A9D3005B254E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
