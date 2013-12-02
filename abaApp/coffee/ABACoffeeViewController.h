@@ -12,9 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *status;
 @property (weak, nonatomic) IBOutlet UILabel *lastMade;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *updateCoffeStats;
 
-- (IBAction)updateButtonPressed:(id)sender;
+- (IBAction)refreshButtonPressed:(id)sender;
 - (void) updateCoffeeStatus;
 
 @end

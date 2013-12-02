@@ -16,18 +16,6 @@
 
 @implementation ABACoffeeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(updateOnNotification)
-                                                     name:UIApplicationDidBecomeActiveNotification
-                                                   object:nil];
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -58,7 +46,7 @@
     self.lastMade.text = [NSString stringWithFormat:@"Kaffen ble sist laget\n%@", lastMade];
 }
 
-- (IBAction)updateButtonPressed:(id)sender {
+- (IBAction)refreshButtonPressed:(id)sender {
     [self displayCoffeeStatus:@"Updating..."];
     [self displayCoffeLastMade:@"Updating..."];
     [self updateCoffeeStatus];
@@ -75,9 +63,9 @@
     
     NSInteger status = [coffeeStatus[@"status"] integerValue];
     if (status > 0) {
-        [self displayCoffeeStatus:@"Kaffen er på! LØP :D"];
+        [self displayCoffeeStatus:@"Kaffen er på!\nLØP og ta kaffe :D"];
     } else {
-        [self displayCoffeeStatus:@"Kaffen er av! Skru den på!"];
+        [self displayCoffeeStatus:@"Kaffen er av!\nSkru den på!"];
     }
     
     [self displayCoffeLastMade:coffeeStatus[@"last_start"]];

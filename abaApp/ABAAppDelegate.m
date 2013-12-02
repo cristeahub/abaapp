@@ -13,10 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[ABACoffeeViewController alloc] initWithNibName:@"ABACoffeeViewController" bundle:nil];
-    [self.window makeKeyAndVisible];
     return YES;
 }
 
