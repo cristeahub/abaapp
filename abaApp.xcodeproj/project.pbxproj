@@ -22,6 +22,7 @@
 		3062EA331847A9D3005B254E /* abaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EA321847A9D3005B254E /* abaAppTests.m */; };
 		30F8403F184CC37C00027EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F8403E184CC37C00027EC2 /* Main.storyboard */; };
 		4B23CB309AF54BA3BC0C35CB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8F2B017547423FB9CC91E0 /* libPods.a */; };
+		C89C8AEE187C3C67006B9DB3 /* ABADinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89C8AED187C3C67006B9DB3 /* ABADinnerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		306C99F11849152100A53E77 /* ABAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABAConstants.h; path = resources/ABAConstants.h; sourceTree = "<group>"; };
 		30F8403E184CC37C00027EC2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4737F0BE2C93464199FF4C97 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C89C8AEC187C3C67006B9DB3 /* ABADinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABADinnerViewController.h; sourceTree = "<group>"; };
+		C89C8AED187C3C67006B9DB3 /* ABADinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABADinnerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				3062EA1D1847A9D3005B254E /* ABAAppDelegate.m */,
 				3040C62318490D110011277B /* ABACoffeeViewController.h */,
 				3040C62418490D110011277B /* ABACoffeeViewController.m */,
+				C89C8AEC187C3C67006B9DB3 /* ABADinnerViewController.h */,
+				C89C8AED187C3C67006B9DB3 /* ABADinnerViewController.m */,
 				30F8403E184CC37C00027EC2 /* Main.storyboard */,
 				3062EA1F1847A9D3005B254E /* Images.xcassets */,
 				3062EA141847A9D3005B254E /* Supporting Files */,
@@ -293,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3062EA1A1847A9D3005B254E /* main.m in Sources */,
+				C89C8AEE187C3C67006B9DB3 /* ABADinnerViewController.m in Sources */,
 				3040C62618490D110011277B /* ABACoffeeViewController.m in Sources */,
 				3062EA1E1847A9D3005B254E /* ABAAppDelegate.m in Sources */,
 			);

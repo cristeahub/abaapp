@@ -1,10 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A3017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aQ4-9r-xn3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Lrm-u7-LMt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Coffee View Controller - ABAPP-->
+        <!--Dinner View Controller - Middag-->
+        <scene sceneID="SZ2-SE-OAn">
+            <objects>
+                <viewController title="Middag" id="xSe-lM-J2g" customClass="ABADinnerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Jp-Ym-tlI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fy4-Us-bGH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8RR-k5-Ln3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ssz-QP-o7O">
+                                <rect key="frame" x="20" y="100" width="280" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Middag" id="Gxw-kW-kUI"/>
+                    <navigationItem key="navigationItem" title="Middag" id="q0o-FB-dja"/>
+                    <connections>
+                        <outlet property="middagDisplay" destination="ssz-QP-o7O" id="pPX-5M-k3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpA-d1-zUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="168"/>
+        </scene>
+        <!--Navigation Controller - Middag-->
+        <scene sceneID="3Kz-1m-wXA">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="gYi-Cb-wbJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Middag" id="r8B-Nz-nK7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctm-0C-hN4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xSe-lM-J2g" kind="relationship" relationship="rootViewController" id="sfL-BT-vCR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htU-y9-orq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1207" y="168"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LAw-as-yFN">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Lrm-u7-LMt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="J8o-vR-tJu"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kH3-sh-bze">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8ee-r3-kgg" kind="relationship" relationship="viewControllers" id="kbD-Kw-p9b"/>
+                        <segue destination="gYi-Cb-wbJ" kind="relationship" relationship="viewControllers" id="iNv-N6-Nr4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9q-JR-m4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1790" y="168"/>
+        </scene>
+        <!--Coffee View Controller - Coffee-->
         <scene sceneID="IYK-Lf-5xd">
             <objects>
                 <viewController id="AYP-fy-s7w" customClass="ABACoffeeViewController" sceneMemberID="viewController">
@@ -33,7 +101,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ABAPP" id="EGg-5A-tEm">
+                    <tabBarItem key="tabBarItem" title="Kaffe" id="M8p-Vm-wpT"/>
+                    <navigationItem key="navigationItem" title="Coffee" id="EGg-5A-tEm">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="PmS-Lo-uEo">
                             <connections>
                                 <action selector="refreshButtonPressed:" destination="AYP-fy-s7w" id="Neq-D1-5Ky"/>
@@ -47,25 +116,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfC-02-sfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="72"/>
+            <point key="canvasLocation" x="-748" y="976"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8GC-n1-WtX">
+        <!--Navigation Controller - Kaffe-->
+        <scene sceneID="12C-rT-atX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aQ4-9r-xn3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LBF-Vk-A5J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <navigationController definesPresentationContext="YES" id="8ee-r3-kgg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kaffe" id="ixP-Sv-Cd8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6F-Xe-jHw">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="AYP-fy-s7w" kind="relationship" relationship="rootViewController" id="UaY-yY-i98"/>
+                        <segue destination="AYP-fy-s7w" kind="relationship" relationship="rootViewController" id="wsh-dH-iVf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P1W-bQ-gp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNA-xO-6hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="72"/>
+            <point key="canvasLocation" x="-1207" y="976"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
