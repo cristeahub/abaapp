@@ -11,5 +11,8 @@
 @interface ABADinnerViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *middagDisplay;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, assign) NSInteger dayOfWeek;
 
 @end
