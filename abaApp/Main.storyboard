@@ -7,32 +7,32 @@
         <!--Dinner View Controller - Middag-->
         <scene sceneID="SZ2-SE-OAn">
             <objects>
-                <viewController title="Middag" id="xSe-lM-J2g" customClass="ABADinnerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Jp-Ym-tlI"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fy4-Us-bGH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8RR-k5-Ln3">
+                <viewController title="Middag" extendedLayoutIncludesOpaqueBars="YES" id="xSe-lM-J2g" customClass="ABADinnerViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rAl-Ja-BQl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ssz-QP-o7O">
-                                <rect key="frame" x="20" y="100" width="280" height="406"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="xSe-lM-J2g" id="vQf-5i-S2l"/>
+                            <outlet property="delegate" destination="xSe-lM-J2g" id="lhM-hH-X2Y"/>
+                        </connections>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="Middag" id="Gxw-kW-kUI"/>
                     <navigationItem key="navigationItem" title="Middag" id="q0o-FB-dja"/>
                     <connections>
                         <outlet property="middagDisplay" destination="ssz-QP-o7O" id="pPX-5M-k3d"/>
+                        <outlet property="tableView" destination="rAl-Ja-BQl" id="hFT-Pq-LTA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpA-d1-zUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" id="ssz-QP-o7O">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </objects>
             <point key="canvasLocation" x="-748" y="168"/>
         </scene>
@@ -44,6 +44,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctm-0C-hN4">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i2o-UM-pj0">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="xSe-lM-J2g" kind="relationship" relationship="rootViewController" id="sfL-BT-vCR"/>
                     </connections>
