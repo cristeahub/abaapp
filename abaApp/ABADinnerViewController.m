@@ -86,22 +86,29 @@
     NSString *weekNumberAsString = [NSString stringWithFormat:@"%d", weekNumber];
     if ([JSON objectForKey:weekNumberAsString]) {
         [locations[index] updateMenu:JSON[weekNumberAsString]];
-        [self.middagDisplay removeFromSuperview];
-        [self.tableView reloadData];
+        self.tableView.backgroundView = nil;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     } else {
         [self displayDinnerError];
     }
+    [self.tableView reloadData];
 }
 
 - (void)displayDinnerError
 {
-    [self.view addSubview:self.middagDisplay];
+    self.tableView.backgroundView = self.middagDisplay;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.middagDisplay.text = @"Fant ingen middagsinfo";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [weekdays count] - self.dayOfWeek; // Change to remaining weekdays
+    for (ABADinnerLocation *location in locations) {
+        if ([location.menu count]) {
+            return [weekdays count] - self.dayOfWeek;
+        }
+    }
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
