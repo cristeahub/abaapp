@@ -17,7 +17,7 @@
                             <outlet property="delegate" destination="xSe-lM-J2g" id="lhM-hH-X2Y"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Middag" id="Gxw-kW-kUI"/>
+                    <tabBarItem key="tabBarItem" title="Middag" image="dinnerTabBar" id="Gxw-kW-kUI"/>
                     <navigationItem key="navigationItem" title="Middag" id="q0o-FB-dja"/>
                     <connections>
                         <outlet property="middagDisplay" destination="ssz-QP-o7O" id="pPX-5M-k3d"/>
@@ -40,7 +40,7 @@
         <scene sceneID="3Kz-1m-wXA">
             <objects>
                 <navigationController definesPresentationContext="YES" id="gYi-Cb-wbJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Middag" id="r8B-Nz-nK7"/>
+                    <tabBarItem key="tabBarItem" title="Middag" image="dinnerTabBar" id="r8B-Nz-nK7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctm-0C-hN4">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -59,7 +59,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="LAw-as-yFN">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="Lrm-u7-LMt" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="Lrm-u7-LMt" customClass="ABATabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="J8o-vR-tJu"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kH3-sh-bze">
@@ -68,6 +68,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tabBar" destination="kH3-sh-bze" id="Sd0-oy-IQt"/>
                         <segue destination="8ee-r3-kgg" kind="relationship" relationship="viewControllers" id="kbD-Kw-p9b"/>
                         <segue destination="gYi-Cb-wbJ" kind="relationship" relationship="viewControllers" id="iNv-N6-Nr4"/>
                     </connections>
@@ -126,7 +127,7 @@
         <scene sceneID="12C-rT-atX">
             <objects>
                 <navigationController definesPresentationContext="YES" id="8ee-r3-kgg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Kaffe" id="ixP-Sv-Cd8"/>
+                    <tabBarItem key="tabBarItem" title="Kaffe" image="coffeeTabBar" id="ixP-Sv-Cd8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6F-Xe-jHw">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -139,6 +140,10 @@
             <point key="canvasLocation" x="-1207" y="976"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffeeTabBar" width="30" height="30"/>
+        <image name="dinnerTabBar" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
